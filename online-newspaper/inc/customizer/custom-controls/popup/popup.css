@@ -1,0 +1,31 @@
+.popup-control-wrapper {
+    position: relative;
+}
+
+.popup-control-wrapper .customize-control-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-control-wrapper .customize-control-head .customize-control-icon {
+    padding: 5px;
+    background: #5fa1ff;
+    color: white;
+    border-radius: 15px;
+}
+
+.popup-control-wrapper .popup-wrapper {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 400px;
+    max-height: 500px;
+    background: white;
+    padding: 5px;
+}
+
+.popup-control-wrapper .popup-wrapper.open {
+    display: block;
+}

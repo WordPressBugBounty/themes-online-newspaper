@@ -1,0 +1,80 @@
+/**
+ * Metaboxes stylings
+ */
+ #online-newspaper-post-metabox .radio-image-fields-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  #online-newspaper-post-metabox .radio-image-fields-wrap .radio-field {
+    cursor: pointer;
+    padding: 0;
+    margin: 0 5px;
+  }
+
+  #online-newspaper-post-metabox .radio-image-fields-wrap .radio-field img {
+    height: 60px;
+    display: block;
+  }
+  #online-newspaper-post-metabox .radio-image-fields-wrap .radio-field.selected {
+    border:3px solid #2271b1; 
+  }
+
+#online-newspaper-post-metabox .single-meta-field.radio-image-field label {
+  font-weight: 500;
+}
+
+.term-sidebar-layouts-wrap .taxonomy-sidebar-layouts-wrap,
+.term-archive-layouts-wrap .taxonomy-archive-layouts-wrap,
+.form-field .taxonomy-sidebar-layouts-wrap,
+.form-field .taxonomy-archive-layouts-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.term-sidebar-layouts-wrap .taxonomy-sidebar-layouts-wrap > p,
+.term-archive-layouts-wrap .taxonomy-archive-layouts-wrap > p,
+.form-field .taxonomy-sidebar-layouts-wrap > p,
+.form-field .taxonomy-archive-layouts-wrap > p {
+    position: relative;
+    flex: 0 1 30px;
+}
+
+.postbox .sidebar-section .sidebar-layouts-wrap > p input,
+.postbox .single-layouts-section .single-layouts-wrap > p input,
+.term-sidebar-layouts-wrap .taxonomy-sidebar-layouts-wrap > p input,
+.term-archive-layouts-wrap .taxonomy-archive-layouts-wrap > p input,
+.form-field .taxonomy-sidebar-layouts-wrap > p input,
+.form-field .taxonomy-archive-layouts-wrap > p input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.form-field .taxonomy-sidebar-layouts-wrap label img,
+.form-field .taxonomy-archive-layouts-wrap label img {
+    background-color: transparent;
+    border-radius: 8px 8px 0 0;
+    background-color: transparent;
+    padding: 6px 6px 0;
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+.postbox .sidebar-section .sidebar-layouts-wrap .layout-item input[type="radio"]:checked + label img,
+.postbox .single-layouts-section .single-layouts-wrap .layout-item input[type="radio"]:checked + label img,
+.term-sidebar-layouts-wrap .taxonomy-sidebar-layouts-wrap .layout-item input[type="radio"]:checked + label img,
+.term-archive-layouts-wrap .taxonomy-archive-layouts-wrap .layout-item input[type="radio"]:checked + label img,
+.form-field .taxonomy-sidebar-layouts-wrap .layout-item input[type="radio"]:checked + label img,
+.form-field .taxonomy-archive-layouts-wrap .layout-item input[type="radio"]:checked + label img {
+    background-color: #007cba;
+}
+
+.postbox .sidebar-section .sidebar-layouts-wrap > p label span,
+.postbox .single-layouts-section .single-layouts-wrap > p label span,
+.term-sidebar-layouts-wrap .taxonomy-sidebar-layouts-wrap > p label span,
+.term-archive-layouts-wrap .taxonomy-archive-layouts-wrap > p label span,
+.form-field .taxonomy-sidebar-layouts-wrap > p label span,
+.form-field .taxonomy-archive-layouts-wrap > p label span {
+    display: none;
+}

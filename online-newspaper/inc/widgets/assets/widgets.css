@@ -1,0 +1,263 @@
+/**
+ * Widegts styling
+ *
+ */
+
+ /**********************
+    Heading field
+ ***********************/
+ .online-newspaper-heading-field {
+    border-top: 1px double rgb(0 0 0 / 25%);
+    border-bottom: 1px double rgb(0 0 0 / 25%);
+    text-transform: uppercase;
+    background-color: #eeeeee;
+    width: 100%;
+    margin-left: -10px;
+    padding: 6px 20px;
+ }
+
+ .online-newspaper-heading-field .heading {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+ }
+
+ .online-newspaper-widget-field {
+   margin: 1em 0;
+ }
+
+ .online-newspaper-widget-field .title {
+    font-size: small;
+    margin: 4px 0;
+ }
+
+ .online-newspaper-widget-field .description {
+   font-style: italic;
+   padding: 0!important;
+ }
+
+ .online-newspaper-multicheckbox-field .multicheckbox-content {
+   border: 1px solid #c3c4c7;
+   padding: 8px 10px;
+   min-height: 200px;
+   overflow-y: scroll;
+ }
+
+ .online-newspaper-multicheckbox-field .multicheckbox-content .multicheckbox-single-item {
+   padding: 5px;
+ }
+
+ .online-newspaper-widget-field input,
+ .online-newspaper-widget-field select,
+ .online-newspaper-widget-field textarea {
+   border-radius: 0;
+ }
+
+ .online-newspaper-upload-field .upload-trigger.selected,
+ .online-newspaper-upload-field .upload-buttons img.nothasImage,
+ .online-newspaper-upload-field .upload-buttons.not-selected {
+   display: none;
+ }
+
+ .online-newspaper-upload-field .upload-trigger {
+    background-color: #f0f0f1;
+    color: #2c3338;
+    border: 1px dashed #c3c4c7;
+    box-sizing: border-box;
+    cursor: pointer;
+    line-height: 1.6;
+    padding: 9px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.online-newspaper-upload-field .upload-trigger:hover {
+  background-color: #fff;
+}
+
+.online-newspaper-upload-field .upload-buttons button {
+  margin-top: 12px;
+  border-color: #d63638;
+}
+.online-newspaper-upload-field .upload-buttons img{
+  width: 100%;
+}
+
+.online-newspaper-widget-field .refer-note a {
+  color: #2271b1;
+}
+
+.online-newspaper-icon-text-field .icon-selector-wrap {
+  display: none;
+}
+
+/* tab selector */
+.online-newspaper-widget-field.online-newspaper-icon-text-field .field-group-wrap .icon-selector i:after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--white-text);
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.online-newspaper-widget-field.online-newspaper-icon-text-field .field-group-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.online-newspaper-widget-field.online-newspaper-icon-text-field .field-group-wrap .icon-field {
+  flex: 1;
+  border: 1px solid #6a6a6a;
+  margin-right: 10px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 4px;
+}
+
+
+.online-newspaper-widget-field.online-newspaper-icon-text-field .field-group-wrap .icon-field:hover {
+  cursor: pointer;
+}
+
+.online-newspaper-widget-field.online-newspaper-icon-text-field .field-group-wrap .icon-selector-wrap {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #545454;
+  border-radius: 5px;;
+}
+
+.online-newspaper-widget-field.online-newspaper-icon-text-field .field-group-wrap .icon-selector-wrap i {
+  color: #545454;
+  padding: 5px;
+}
+
+.online-newspaper-widget-field.online-newspaper-icon-text-field .field-group-wrap .icon-selector-wrap i:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+/*******************************
+    Repeater field
+*******************************/
+.online-newspaper-repeater-field .repeater-single-item .single-item-edit-area {
+  display: none;
+}
+
+.online-newspaper-repeater-field .repeater-single-item .single-item-edit-area.isShow {
+  display: block;
+}
+
+/** add slider widgets **/
+.online-newspaper-widget-field.online-newspaper-repeater-field .repeater-field-content-area .repeater-single-item{
+  display: flex;
+    padding: 0 0 0 12px;
+    border: 1px solid #ddd;
+    color: #556068;
+    background: #fff;
+    cursor: move;
+    font-size: 12px;
+    border-radius: 3px;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+
+    flex-direction: column;
+    width: 98%;
+}
+.online-newspaper-widget-field.online-newspaper-repeater-field .repeater-field-content-area .repeater-single-item .field-actions {
+  text-align: right;
+    margin-top: 20px;
+}
+    
+
+.online-newspaper-widget-field.online-newspaper-repeater-field .repeater-field-content-area .repeater-single-item button.add-item{
+    cursor: pointer;
+    padding: 4px 8px;
+    box-shadow: 0px 0px 2px rgb(24 35 177 / 58%);
+    border: none;
+    text-align: right;
+  }
+
+  .online-newspaper-widget-field.online-newspaper-repeater-field .repeater-field-content-area .repeater-single-item  .single-item-heading {
+    display: flex;
+
+
+    line-height: 32px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    width: 98%;
+  }
+
+  .online-newspaper-widget-field.online-newspaper-repeater-field .repeater-field-content-area .repeater-single-item  .single-item-heading .heading-text {
+    text-align: left;
+    flex: 0 1 90%;
+  }
+
+  .online-newspaper-widget-field.online-newspaper-repeater-field .repeater-field-content-area .repeater-single-item  .single-item-heading .heading-icon{
+    text-align: right;
+    display: inline-block;
+    flex: 0 1 10%;
+  }
+
+  .single-field.image-field .image-preview img {
+    display: block;
+  }
+
+  .online-newspaper-repeater-field .single-field.image-field .image-preview img {
+    width: 50px;
+  }
+
+  .single-field.image-field .image-preview button {
+    margin: 10px 0;
+  }
+
+  .single-field.image-field .image-preview button:hover {
+    cursor: pointer;
+  }
+
+  .online-newspaper-widget-field.online-newspaper-repeater-field .single-field.image-field .image-preview button,
+  .online-newspaper-widget-field.online-newspaper-repeater-field .single-item-actions .remove-item
+  {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    color: #000;
+    font-weight: 500;
+    margin-right: 5px;
+  }
+
+  .online-newspaper-widget-field.online-newspaper-repeater-field .single-field.image-field label,
+  .online-newspaper-widget-field.online-newspaper-repeater-field .single-item-actions label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+
+.widget-content .field-actions .add-item {
+  padding: 5px 10px;
+    color: #000;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.online-newspaper-widget-field.online-newspaper-repeater-field button {
+  cursor: pointer;
+}
+
+/* Tabbed Posts */
+  .icon-selector-wrap {
+    display: none;
+  }
+
+  .icon-selector-wrap.isactive {
+    display: block;
+  }
