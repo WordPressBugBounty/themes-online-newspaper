@@ -73,27 +73,32 @@ URL: http://github.com/kenwheeler/slick
 License: The MIT License
 
 == Changelog ==
-= 1.0.0 - May 14th, 2026 =
-    * Initial release
 
-= 1.0.1 - May 19th, 2026 =
-    * Fixed - text-domain issue fixed
-
-= 1.0.2 - May 28th, 2026 =
-    * Fixed - demo import issue fixed
-
-= 1.0.3 - June 12th, 2026 =
-    * Added - New customizer demos added
-
-= 1.0.4 - June 15th, 2026 =
-    * Added - New news kit elementor demos added
-
-= 1.0.4 - May 26th, 2026 =
-    * Added - New Elementor demos added
-
-= 1.0.6 - June 29th, 2026 =
-    * Fixed - Web stories 403 issue fix
+= 1.0.8 - July 10th, 2026 =
+    * Fixed - Nekit Title hove effect compatibility
 
 = 1.0.7 - June 29th, 2026 =
     * Fixed - main banner disign fixes
     * Fixed - Ajax filter block fixes
+
+= 1.0.6 - June 29th, 2026 =
+    * Fixed - Web stories 403 issue fix
+
+= 1.0.5 - June 15th, 2026 =
+    * Added - New news kit elementor demos added
+
+= 1.0.4 - May 26th, 2026 =
+    * Added - New Elementor demos added  
+
+= 1.0.3 - June 12th, 2026 =
+    * Added - New customizer demos added
+
+= 1.0.2 - May 28th, 2026 =
+    * Fixed - demo import issue fixed
+
+= 1.0.1 - May 19th, 2026 =
+    * Fixed - text-domain issue fixed
+
+= 1.0.0 - May 14th, 2026 =
+    * Initial release
+

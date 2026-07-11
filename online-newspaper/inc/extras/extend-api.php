@@ -71,6 +71,10 @@ if( ! class_exists( 'Online_Newspaper_Extend_Api' ) ) :
                 'post_status'   =>  'publish',
                 'posts_per_page'    =>  6,
                 'ignore_sticky_posts'   =>  true,
+                'fields'    =>  'ids',
+                'no_found_rows' =>  true,
+                'update_post_meta_cache'    =>  false,
+                'update_post_term_cache'    =>  false,
             ];
             if ( isset( $request['query_slug'] ) ) $query_args['post_type'] = $request['query_slug'];
             if ( isset( $request['s'] ) ) :

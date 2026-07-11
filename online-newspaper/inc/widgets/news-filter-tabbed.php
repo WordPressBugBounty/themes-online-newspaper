@@ -53,7 +53,11 @@ class Online_Newspaper_News_Filter_Tabbed_Widget extends WP_Widget {
                             $first_post_args = array(
                                 'post_type' => 'post',
                                 'posts_per_page' => 6,
-                                'ignore_sticky_posts'    => true
+                                'ignore_sticky_posts'    => true,
+                                'fields'    =>  'ids',
+                                'no_found_rows' =>  true,
+                                'update_post_meta_cache'    =>  false,
+                                'update_post_term_cache'    =>  false,
                             );
                             if( $first_tab_posts != 'all' ) $first_post_args['date_query'] = online_newspaper_get_date_format_array_args($first_tab_posts);
                             $first_post_query = new WP_Query( $first_post_args );
@@ -91,7 +95,11 @@ class Online_Newspaper_News_Filter_Tabbed_Widget extends WP_Widget {
                             $second_post_args = array(
                                 'post_type' => 'post',
                                 'posts_per_page' => 6,
-                                'ignore_sticky_posts'    => true
+                                'ignore_sticky_posts'    => true,
+                                'fields'    =>  'ids',
+                                'no_found_rows' =>  true,
+                                'update_post_meta_cache'    =>  false,
+                                'update_post_term_cache'    =>  false,
                             );
                             if( $second_tab_posts != 'all' ) $second_post_args['date_query'] = online_newspaper_get_date_format_array_args($second_tab_posts);
                             $second_post_query = new WP_Query( $second_post_args );
@@ -125,7 +133,11 @@ class Online_Newspaper_News_Filter_Tabbed_Widget extends WP_Widget {
                             $third_post_args = array(
                                 'post_type' => 'post',
                                 'posts_per_page' => 6,
-                                'ignore_sticky_posts'    => true
+                                'ignore_sticky_posts'    => true,
+                                'fields'    =>  'ids',
+                                'no_found_rows' =>  true,
+                                'update_post_meta_cache'    =>  false,
+                                'update_post_term_cache'    =>  false,
                             );
                             if( $third_tab_posts != 'all' ) $third_post_args['date_query'] = online_newspaper_get_date_format_array_args($third_tab_posts);
                             $third_post_query = new WP_Query( $third_post_args );

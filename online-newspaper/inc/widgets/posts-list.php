@@ -46,7 +46,11 @@ class Online_Newspaper_Posts_List_Widget extends WP_Widget {
                         array( 
                             'cat'    => absint( $posts_category ),
                             'posts_per_page' => 3,
-                            'ignore_sticky_posts'    => true
+                            'ignore_sticky_posts'    => true,
+                            'fields'    =>  'ids',
+                            'no_found_rows' =>  true,
+                            'update_post_meta_cache'    =>  false,
+                            'update_post_term_cache'    =>  false,
                         )
                     );
                     if( $post->have_posts() ) :

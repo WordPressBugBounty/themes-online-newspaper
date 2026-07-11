@@ -78,16 +78,36 @@
          * @since 1.0.6
          */
         getNonce: function() {
-            let self = this
-            return new Promise( resolve => {
-                if( self.nonce ) {
-                    resolve( self.nonce )
-                    return
-                }
-                $.post( ajaxUrl, { action: 'online_newspaper_get_nonce' }, function( res ) {
-                    if( res.success ) {
-                        self.nonce = res.data.nonce
-                        resolve( self.nonce )
+            // let self = this
+            // return new Promise( resolve => {
+            //     if( self.nonce ) {
+            //         resolve( self.nonce )
+            //         return
+            //     }
+            //     $.post( ajaxUrl, { action: 'online_newspaper_get_nonce' }, function( res ) {
+            //         if( res.success ) {
+            //             self.nonce = res.data.nonce
+            //             resolve( self.nonce )
+            //         }
+            //     })
+            // })
+             return new Promise((resolve, reject) => {
+                $.ajax({
+                    method: 'POST',
+                    url: ajaxUrl,
+                    data: { 
+                        action: 'online_newspaper_get_nonce',
+                        _: Date.now() // cache buster
+                    },
+                    success: function(res) {
+                        if (res.success) {
+                            resolve(res.data.nonce)
+                        } else {
+                            reject('Nonce fetch failed')
+                        }
+                    },
+                    error: function() {
+                        reject('Nonce fetch error')
                     }
                 })
             })

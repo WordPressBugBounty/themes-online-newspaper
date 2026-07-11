@@ -149,7 +149,10 @@ if( ! function_exists( 'online_newspaper_wp_query' ) ) :
                         'post_type'	=>	$type,
                         'posts_per_page'	=>	1,
                         'orderby'	=>	'rand',
-                        'fields'    =>  'ids'
+                        'fields'    =>  'ids',
+                        'no_found_rows' =>  true,
+                        'update_post_meta_cache'    =>  false,
+                        'update_post_term_cache'    =>  false,
                     ];
                     if( $type == 'search' ) $type_args['s'] = 'a';
                     $type_query = new \WP_Query( apply_filters( 'blogzee_query_args_filter', $type_args ) );

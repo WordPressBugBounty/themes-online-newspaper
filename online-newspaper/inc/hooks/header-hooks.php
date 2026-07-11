@@ -251,7 +251,10 @@ endif;
             'order' => esc_html( $orderArray[1] ),
             'orderby' => esc_html( $orderArray[0] ),
             'ignore_sticky_posts'    => true,
-            'fields'    =>  'ids'
+            'fields'    =>  'ids',
+            'no_found_rows' =>  true,
+            'update_post_meta_cache'    =>  false,
+            'update_post_term_cache'    =>  false,
         );
         $ticker_args['posts_per_page'] = absint( $ticker_news_numbers );
         if( $ticker_news_categories ) $ticker_args['cat'] = online_newspaper_get_categories_for_args( $ticker_news_categories );

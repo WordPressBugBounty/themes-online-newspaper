@@ -1408,26 +1408,6 @@ Cursor Animation
         }
     }
 
-    /* Animation Two */
-    .online-newspaper-cursor.type--two {
-        content: '';
-        width: 10px;
-        height: 10px;
-        background: var( --online-newspaper-global-preset-gradient-color-2 );
-        border-radius: 50%;
-        position: fixed;
-        z-index: 999;
-        pointer-events: none;
-        overflow: hidden;
-        transform: translate(92%, 106%);
-        transition: .10s;
-    }
-
-    .online-newspaper-cursor.type--two.isActive {
-        opacity: .5;
-        transform: translate(105%, 106%) scale(4);
-    }
-
 
 /* 
 =========================

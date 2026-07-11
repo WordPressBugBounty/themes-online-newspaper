@@ -152,20 +152,20 @@ function online_newspaper_scripts() {
 	$js_dependency = [ 'jquery' ];
 	$theme_js_dependency = is_search() ? [ 'jquery', 'jquery-ui-datepicker' ] : $js_dependency;
 	$template_directory_uri = get_template_directory_uri();
-	wp_enqueue_style( 'fontawesome', $template_directory_uri . '/assets/lib/fontawesome/css/all.min.css', $css_dependency, '6.5.1', 'all' );
-	wp_enqueue_style( 'slick', $template_directory_uri . '/assets/lib/slick/slick.css', $css_dependency, '1.8.1', 'all' );
-	wp_enqueue_style( 'magnific-popup', $template_directory_uri . '/assets/lib/magnific-popup/magnific-popup.css', $css_dependency, '1.1.0', 'all' );
-	wp_enqueue_style( 'online-newspaper-typo-fonts', wptt_get_webfont_url( online_newspaper_typo_fonts_url() ), $css_dependency, null );
+	wp_enqueue_style( 'fontawesome', $template_directory_uri . '/assets/lib/fontawesome/css/all.min.css', $css_dependency, '6.5.1', 'print' );
+	wp_enqueue_style( 'slick', $template_directory_uri . '/assets/lib/slick/slick.css', $css_dependency, '1.8.1', 'print' );
+	wp_enqueue_style( 'magnific-popup', $template_directory_uri . '/assets/lib/magnific-popup/magnific-popup.css', $css_dependency, '1.1.0', 'print' );
+	wp_enqueue_style( 'online-newspaper-typo-fonts', wptt_get_webfont_url( online_newspaper_typo_fonts_url() ), $css_dependency, null, 'print' );
 	// enqueue inline style
 	wp_enqueue_style( 'online-newspaper-style', get_stylesheet_uri(), $css_dependency, ONLINE_NEWSPAPER_VERSION );
 	wp_add_inline_style( 'online-newspaper-style', Cache_Manager::get_dynamic_css() );
 	wp_enqueue_style( 'online-newspaper-main-style', $template_directory_uri.'/assets/css/main.css', $css_dependency, ONLINE_NEWSPAPER_VERSION );
 	wp_enqueue_style( 'online-newspaper-builder-style', $template_directory_uri.'/assets/css/builder.css', $css_dependency, ONLINE_NEWSPAPER_VERSION );
 	// additional css
-	wp_enqueue_style( 'online-newspaper-main-style-additional', $template_directory_uri.'/assets/css/add.css', $css_dependency, ONLINE_NEWSPAPER_VERSION );
+	wp_enqueue_style( 'online-newspaper-main-style-additional', $template_directory_uri.'/assets/css/add.css', $css_dependency, ONLINE_NEWSPAPER_VERSION, 'print' );
 	if( $preloader_option ) wp_enqueue_style( 'online-newspaper-loader-style', $template_directory_uri.'/assets/css/loader.css', $css_dependency, ONLINE_NEWSPAPER_VERSION );
-	wp_enqueue_style( 'online-newspaper-responsive-style', $template_directory_uri.'/assets/css/responsive.css', $css_dependency, ONLINE_NEWSPAPER_VERSION );
-	wp_enqueue_style( 'jquery-ui', get_template_directory_uri() .'/assets/lib/jquery-ui/jquery-ui.min.css', $css_dependency, ONLINE_NEWSPAPER_VERSION, 'all' );
+	wp_enqueue_style( 'online-newspaper-responsive-style', $template_directory_uri.'/assets/css/responsive.css', $css_dependency, ONLINE_NEWSPAPER_VERSION, 'print' );
+	wp_enqueue_style( 'jquery-ui', get_template_directory_uri() .'/assets/lib/jquery-ui/jquery-ui.min.css', $css_dependency, ONLINE_NEWSPAPER_VERSION, 'print' );
 	wp_style_add_data( 'online-newspaper-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'slick', $template_directory_uri . '/assets/lib/slick/slick.min.js', $js_dependency, '1.8.1', $enqueue_scripts_args );
@@ -513,7 +513,11 @@ function online_newspaper_filter_posts_load_tab_content() {
 		'order' => esc_html( $orderArray[1] ),
 		'orderby' => esc_html( $orderArray[0] ),
 		'cat' => esc_html( $options->category_id ),
-		'ignore_sticky_posts'    => true
+		'ignore_sticky_posts'    => true,
+		'fields'    =>  'ids',
+		'no_found_rows' =>  true,
+		'update_post_meta_cache'    =>  false,
+		'update_post_term_cache'    =>  false,
 	);
 	if( $query->ids ) $post_args['post__not_in'] = online_newspaper_get_array_key_string_to_int( $query->ids );
 	$n_posts = new \WP_Query( $posts_args );
@@ -586,7 +590,11 @@ function online_newspaper_filter_layout_five_posts_load_tab_content() {
 		'order' => esc_html( $orderArray[1] ),
 		'orderby' => esc_html( $orderArray[0] ),
 		'cat' => esc_html( $options->category_id ),
-		'ignore_sticky_posts'    => true
+		'ignore_sticky_posts'    => true,
+		'fields'    =>  'ids',
+		'no_found_rows' =>  true,
+		'update_post_meta_cache'    =>  false,
+		'update_post_term_cache'    =>  false,
 	);
 	if( $query->ids ) $posts_args['post__not_in'] = online_newspaper_get_array_key_string_to_int( $query->ids );
 	$post_query = new \WP_Query( $posts_args );
@@ -1154,7 +1162,10 @@ if( ! function_exists( 'online_newspaper_stories_ajax_call' ) ) :
 			$query_args = [
 				'post_type'	=>	'post',
 				'post_status'	=>	'publish',
-				'no_found_rows'	=>	true
+				'no_found_rows'	=>	true,
+				'fields'    =>  'ids',
+				'update_post_meta_cache'    =>  false,
+				'update_post_term_cache'    =>  false,
 			];
 			$post_per_page = ONP\online_newspaper_get_customizer_option( 'web_stories_max_no_of_inner_stories' );
 			$query_args[ 'posts_per_page' ] = absint( $post_per_page );
@@ -1249,7 +1260,10 @@ if( ! function_exists( 'online_newspaper_sticky_posts_ajax_call' ) ) :
 		$query_args = online_newspaper_get_query_args( 'sticky' );
 		$query_args[ 'posts_per_page' ] = absint( $posts_to_append );
 		$query_args[ 'offset' ] = absint( $total_posts - $posts_to_append );
-		$query_args[ 'offset' ] = absint( $total_posts - $posts_to_append );
+		$query_args[ 'fields' ] = 'ids';
+		$query_args[ 'no_found_rows' ] = true;
+		$query_args[ 'update_post_meta_cache' ] = false;
+		$query_args[ 'update_post_term_cache' ] = false;
 		$success_flag = false;
 		ob_start();
 		$query_instance = new WP_Query( $query_args );
@@ -1292,7 +1306,10 @@ if( ! function_exists( 'online_newspaper_get_query_args' ) ) :
             'orderby'   =>  $exploded_order[ 0 ],
             'ignore_sticky_posts'   =>  true,
             'fields'    =>  'ids',
-            'no_found_rows' =>  true
+			'fields'    =>  'ids',
+			'no_found_rows' =>  true,
+			'update_post_meta_cache'    =>  false,
+			'update_post_term_cache'    =>  false,
         ];
 
 		$post_categories_id_args = ( ! empty( $category_ids ) ) ? implode( ",", array_column( $category_ids, 'value' ) ) : '';
@@ -1423,6 +1440,10 @@ if( ! function_exists( 'online_newspaper_search_page_ajax_call' ) ) :
 		unset( $query_args[ 'before' ] );
 		unset( $query_args[ 'after' ] );
 		$query_args[ 'posts_per_page' ] =  get_option( 'posts_per_page' );
+		$query_args[ 'fields' ] = 'ids';
+		$query_args[ 'no_found_rows' ] = true;
+		$query_args[ 'update_post_meta_cache' ] = false;
+		$query_args[ 'update_post_term_cache' ] = false;
 		$instance = new WP_Query( $query_args );
 		$success_flag = false;
 		if( $instance->have_posts() ) :

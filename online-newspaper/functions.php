@@ -157,3 +157,32 @@ function online_newspaper_prefix_string($prefix) {
 	if( $archive_page_title_prefix ) return apply_filters( 'online_newspaper_archive_page_title_prefix', $prefix );
 	return apply_filters( 'online_newspaper_archive_page_title_prefix', false );
 }
+
+/**
+ * Defer non critical css to prevent css files from blocking render
+ * 
+ * @param string $html The html tag
+ * @param string $handle Tag handle
+ * @since 1.0.0
+ */
+add_filter( 'style_loader_tag', function( $html, $handle ) {
+	if( in_array( $handle, [ 'fontawesome', 'slick', 'magnific-popup', 'online-newspaper-typo-fonts', 'online-newspaper-main-style-additional', 'online-newspaper-responsive-style', 'jquery-ui' ] ) ) {
+		$async = str_replace( "media='print'", "media='print' onload=\"this.media='all'\"", $html );
+		$async .= "<noscript>$html</noscript>";
+		return $async;
+	}
+	return $html;
+}, 10, 2 );
+
+if( ! function_exists( 'online_newspaper_preconnect_to_google_fonts' ) ) {
+	/**
+	 * Preconnect to google links to fetch font families
+	 * 
+	 * @since 1.0.0
+	 */
+	function online_newspaper_preconnect_to_google_fonts() {
+		echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
+		echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
+	}
+	add_action( 'wp_head', 'online_newspaper_preconnect_to_google_fonts' , 1 );
+}

@@ -27,7 +27,11 @@ if( ! function_exists( 'online_newspaper_main_banner_part' ) ) :
             'slider_args'  => array(
                 'order' => esc_html( $orderArray[1] ),
                 'orderby' => esc_html( $orderArray[0] ),
-                'ignore_sticky_posts'   => true
+                'ignore_sticky_posts'   => true,
+                'fields'    =>  'ids',
+                'no_found_rows' =>  true,
+                'update_post_meta_cache'    =>  false,
+                'update_post_term_cache'    =>  false,
             )
         );
         $main_banner_args['slider_args']['posts_per_page'] = 4;
@@ -97,7 +101,10 @@ if( ! function_exists( 'online_newspaper_full_width_blocks_part' ) ) :
                                                         'order' => esc_html( $orderArray[1] ),
                                                         'orderby' => esc_html( $orderArray[0] ),
                                                         'ignore_sticky_posts'   => true,
-                                                        'fields'    =>  'ids'
+                                                        'fields'    =>  'ids',
+                                                        'no_found_rows' =>  true,
+                                                        'update_post_meta_cache'    =>  false,
+                                                        'update_post_term_cache'    =>  false,
                                                     ),
                                                     'options'    => $block
                                                 );
@@ -173,7 +180,10 @@ if( ! function_exists( 'online_newspaper_leftc_rights_blocks_part' ) ) :
                                                             'order' => esc_html( $orderArray[1] ),
                                                             'orderby' => esc_html( $orderArray[0] ),
                                                             'ignore_sticky_posts'   => true,
-                                                            'fields'    =>  'ids'
+                                                            'fields'    =>  'ids',
+                                                            'no_found_rows' =>  true,
+                                                            'update_post_meta_cache'    =>  false,
+                                                            'update_post_term_cache'    =>  false,
                                                         ),
                                                         'options'    => $block
                                                     );
@@ -256,7 +266,10 @@ if( ! function_exists( 'online_newspaper_lefts_rightc_blocks_part' ) ) :
                                                             'order' => esc_html( $orderArray[1] ),
                                                             'orderby' => esc_html( $orderArray[0] ),
                                                             'ignore_sticky_posts'   => true,
-                                                            'fields'    =>  'ids'
+                                                            'fields'    =>  'ids',
+                                                            'no_found_rows' =>  true,
+                                                            'update_post_meta_cache'    =>  false,
+                                                            'update_post_term_cache'    =>  false,
                                                         ),
                                                         'options'    => $block
                                                     );
@@ -332,7 +345,10 @@ if( ! function_exists( 'online_newspaper_bottom_full_width_blocks_part' ) ) :
                                                         'order' => esc_html( $orderArray[1] ),
                                                         'orderby' => esc_html( $orderArray[0] ),
                                                         'ignore_sticky_posts'   => true,
-                                                        'fields'    =>  'ids'
+                                                        'fields'    =>  'ids',
+                                                        'no_found_rows' =>  true,
+                                                        'update_post_meta_cache'    =>  false,
+                                                        'update_post_term_cache'    =>  false,
                                                     ),
                                                     'options'    => $block
                                                 );
@@ -413,7 +429,10 @@ if( ! function_exists( 'online_newspaper_two_column_section_columns_part' ) ) :
                                                                     'order' => esc_html( $orderArray[1] ),
                                                                     'orderby' => esc_html( $orderArray[0] ),
                                                                     'ignore_sticky_posts'   => true,
-                                                                    'fields'    =>  'ids'
+                                                                    'fields'    =>  'ids',
+                                                                    'no_found_rows' =>  true,
+                                                                    'update_post_meta_cache'    =>  false,
+                                                                    'update_post_term_cache'    =>  false,
                                                                 ),
                                                                 'options'    => $block
                                                             );
@@ -462,7 +481,10 @@ if( ! function_exists( 'online_newspaper_two_column_section_columns_part' ) ) :
                                                                     'order' => esc_html( $orderArray[1] ),
                                                                     'orderby' => esc_html( $orderArray[0] ),
                                                                     'ignore_sticky_posts'   => true,
-                                                                    'fields'    =>  'ids'
+                                                                    'fields'    =>  'ids',
+                                                                    'no_found_rows' =>  true,
+                                                                    'update_post_meta_cache'    =>  false,
+                                                                    'update_post_term_cache'    =>  false,
                                                                 ),
                                                                 'options'    => $block
                                                             );
