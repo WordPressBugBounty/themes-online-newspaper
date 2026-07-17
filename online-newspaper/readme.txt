@@ -74,6 +74,9 @@ License: The MIT License
 
 == Changelog ==
 
+= 1.0.9 - July 17th, 2026 =
+    * Fixed - New Elementor Demos Added
+
 = 1.0.8 - July 10th, 2026 =
     * Fixed - Nekit Title hove effect compatibility
 
