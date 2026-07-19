@@ -934,5 +934,461 @@ $demos_array = [
             'blog'  =>  esc_html__( 'News', 'online-newspaper' )
         ]
     ],
+    "pro-one"   =>  [
+        "name"  =>  "One",
+        "type"  =>  "pro",
+        "preview_url"   =>  "https://prev.blazethemes.com/news-elementor-one/",
+        "image" =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-one/home-1.jpg",
+        "menu_array"    =>  [
+            "menu-1"    =>  ""
+        ],
+        "home_slug" =>   "nekit-home",
+        "external_url"  =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-one.zip",
+        'buy_url'=> 'https://blazethemes.com/theme/online-newspaper-pro/',
+        'blog_slug' => '',
+        'plugins' => array(
+            'elementor' => array(
+                'name' => 'Elementor',
+                'source' => 'wordpress',
+                'file_path' => 'elementor/elementor.php'
+            ),
+            'news-kit-elementor-addons' => array(
+                'name' => 'News Kit Elementor Addons',
+                'source' => 'wordpress',
+                'file_path' => 'news-kit-elementor-addons/news-kit-elementor-addons.php'
+            ),
+            'contact-form-7' => array(
+                'name' => 'Contact Form 7',
+                'source' => 'wordpress',
+                'file_path' => 'contact-form-7/contact-form-7.php'
+            )
+        ),
+        'pagebuilder' => array(
+            'elementor' => 'Elementor'
+        ),
+        'tags' => array(
+            'pro' => 'Pro',
+            'new' => 'New',
+            'elementor' => 'Elementor'
+        )
+    ],
+    "pro-three" =>  [
+        "name"  =>  "Travel",
+        "type"  =>  "pro",
+        "preview_url"   =>  "https://prev.blazethemes.com/news-elementor-three/",
+        "image" =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-three/home.jpg",
+        "menu_array"    =>  [
+            "menu-1"    =>  ""
+        ],
+        "home_slug" =>   "nekit-home",
+        "external_url"  =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-three.zip",
+        'buy_url'=> 'https://blazethemes.com/theme/online-newspaper-pro/',
+        'blog_slug' => '',
+        'plugins' => array(
+            'elementor' => array(
+                'name' => 'Elementor',
+                'source' => 'wordpress',
+                'file_path' => 'elementor/elementor.php'
+            ),
+            'news-kit-elementor-addons' => array(
+                'name' => 'News Kit Elementor Addons',
+                'source' => 'wordpress',
+                'file_path' => 'news-kit-elementor-addons/news-kit-elementor-addons.php'
+            ),
+            'contact-form-7' => array(
+                'name' => 'Contact Form 7',
+                'source' => 'wordpress',
+                'file_path' => 'contact-form-7/contact-form-7.php'
+            )
+        ),
+        'pagebuilder' => array(
+            'elementor' => 'Elementor'
+        ),
+        'tags' => array(
+            'pro' => 'Pro',
+            'new' => 'New',
+            'elementor' => 'Elementor'
+        )
+    ],
+    "pro-ten"   =>  [
+        "name"  =>  "Ten",
+        "type"  =>  "pro",
+        "preview_url"   =>  "https://prev.blazethemes.com/news-elementor-ten/",
+        "image" =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-ten/home.jpg",
+        "menu_array"    =>  [
+            "menu-1"    =>  ""
+        ],
+        "home_slug" =>   "nekit-home",
+        "external_url"  =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-ten.zip",
+        'buy_url'=> 'https://blazethemes.com/theme/online-newspaper-pro/',
+        'blog_slug' => '',
+        'plugins' => array(
+            'elementor' => array(
+                'name' => 'Elementor',
+                'source' => 'wordpress',
+                'file_path' => 'elementor/elementor.php'
+            ),
+            'news-kit-elementor-addons' => array(
+                'name' => 'News Kit Elementor Addons',
+                'source' => 'wordpress',
+                'file_path' => 'news-kit-elementor-addons/news-kit-elementor-addons.php'
+            ),
+            'contact-form-7' => array(
+                'name' => 'Contact Form 7',
+                'source' => 'wordpress',
+                'file_path' => 'contact-form-7/contact-form-7.php'
+            )
+        ),
+        'pagebuilder' => array(
+            'elementor' => 'Elementor'
+        ),
+        'tags' => array(
+            'pro' => 'Pro',
+            'new' => 'New',
+            'elementor' => 'Elementor'
+        )
+    ],
+    "pro-two"   =>  [
+        "name"  =>  "Two",
+        "type"  =>  "pro",
+        "preview_url"   =>  "https://prev.blazethemes.com/news-elementor-two/",
+        "image" =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-two/home.jpg",
+        "menu_array"    =>  [
+            "menu-1"    =>  ""
+        ],
+        "home_slug" =>   "nekit-home",
+        "external_url"  =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-two.zip",
+        'buy_url'=> 'https://blazethemes.com/theme/online-newspaper-pro/',
+        'blog_slug' => '',
+        'plugins' => array(
+            'elementor' => array(
+                'name' => 'Elementor',
+                'source' => 'wordpress',
+                'file_path' => 'elementor/elementor.php'
+            ),
+            'news-kit-elementor-addons' => array(
+                'name' => 'News Kit Elementor Addons',
+                'source' => 'wordpress',
+                'file_path' => 'news-kit-elementor-addons/news-kit-elementor-addons.php'
+            ),
+            'contact-form-7' => array(
+                'name' => 'Contact Form 7',
+                'source' => 'wordpress',
+                'file_path' => 'contact-form-7/contact-form-7.php'
+            )
+        ),
+        'pagebuilder' => array(
+            'elementor' => 'Elementor'
+        ),
+        'tags' => array(
+            'pro' => 'Pro',
+            'new' => 'New',
+            'elementor' => 'Elementor'
+        )
+    ],
+    "pro-eight" =>  [
+        "name"  =>  "Eight",
+        "type"  =>  "pro",
+        "preview_url"   =>  "https://prev.blazethemes.com/news-elementor-eight/",
+        "image" =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-eight/home.jpg",
+        "menu_array"    =>  [
+            "menu-1"    =>  ""
+        ],
+        "home_slug" =>   "nekit-home",
+        "external_url"  =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-eight.zip",
+        'buy_url'=> 'https://blazethemes.com/theme/online-newspaper-pro/',
+        'blog_slug' => '',
+        'plugins' => array(
+            'elementor' => array(
+                'name' => 'Elementor',
+                'source' => 'wordpress',
+                'file_path' => 'elementor/elementor.php'
+            ),
+            'news-kit-elementor-addons' => array(
+                'name' => 'News Kit Elementor Addons',
+                'source' => 'wordpress',
+                'file_path' => 'news-kit-elementor-addons/news-kit-elementor-addons.php'
+            ),
+            'contact-form-7' => array(
+                'name' => 'Contact Form 7',
+                'source' => 'wordpress',
+                'file_path' => 'contact-form-7/contact-form-7.php'
+            )
+        ),
+        'pagebuilder' => array(
+            'elementor' => 'Elementor'
+        ),
+        'tags' => array(
+            'pro' => 'Pro',
+            'new' => 'New',
+            'elementor' => 'Elementor'
+        )
+    ],
+    "pro-five"  =>  [
+        "name"  =>  "Five",
+        "type"  =>  "pro",
+        "preview_url"   =>  "https://prev.blazethemes.com/news-elementor-five/",
+        "image" =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-five/home.jpg",
+        "menu_array"    =>  [
+            "menu-1"    =>  ""
+        ],
+        "home_slug" =>   "nekit-home",
+        "external_url"  =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-five.zip",
+        'buy_url'=> 'https://blazethemes.com/theme/online-newspaper-pro/',
+        'blog_slug' => '',
+        'plugins' => array(
+            'elementor' => array(
+                'name' => 'Elementor',
+                'source' => 'wordpress',
+                'file_path' => 'elementor/elementor.php'
+            ),
+            'news-kit-elementor-addons' => array(
+                'name' => 'News Kit Elementor Addons',
+                'source' => 'wordpress',
+                'file_path' => 'news-kit-elementor-addons/news-kit-elementor-addons.php'
+            ),
+            'contact-form-7' => array(
+                'name' => 'Contact Form 7',
+                'source' => 'wordpress',
+                'file_path' => 'contact-form-7/contact-form-7.php'
+            )
+        ),
+        'pagebuilder' => array(
+            'elementor' => 'Elementor'
+        ),
+        'tags' => array(
+            'pro' => 'Pro',
+            'new' => 'New',
+            'elementor' => 'Elementor'
+        )
+    ],
+    "pro-four"  =>  [
+        "name"  =>  "Four",
+        "type"  =>  "pro",
+        "preview_url"   =>  "https://prev.blazethemes.com/news-elementor-four/",
+        "image" =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-four/home.jpg",
+        "menu_array"    =>  [
+            "menu-1"    =>  ""
+        ],
+        "home_slug" =>   "nekit-home",
+        "external_url"  =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-four.zip",
+        'buy_url'=> 'https://blazethemes.com/theme/online-newspaper-pro/',
+        'blog_slug' => '',
+        'plugins' => array(
+            'elementor' => array(
+                'name' => 'Elementor',
+                'source' => 'wordpress',
+                'file_path' => 'elementor/elementor.php'
+            ),
+            'news-kit-elementor-addons' => array(
+                'name' => 'News Kit Elementor Addons',
+                'source' => 'wordpress',
+                'file_path' => 'news-kit-elementor-addons/news-kit-elementor-addons.php'
+            ),
+            'contact-form-7' => array(
+                'name' => 'Contact Form 7',
+                'source' => 'wordpress',
+                'file_path' => 'contact-form-7/contact-form-7.php'
+            )
+        ),
+        'pagebuilder' => array(
+            'elementor' => 'Elementor'
+        ),
+        'tags' => array(
+            'pro' => 'Pro',
+            'new' => 'New',
+            'elementor' => 'Elementor'
+        )
+    ],
+    "pro-nine"  =>  [
+        "name"  =>  "Nine",
+        "type"  =>  "pro",
+        "preview_url"   =>  "https://prev.blazethemes.com/news-elementor-nine/",
+        "image" =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-nine/home.jpg",
+        "menu_array"    =>  [
+            "menu-1"    =>  ""
+        ],
+        "home_slug" =>   "nekit-home",
+        "external_url"  =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-nine.zip",
+        'buy_url'=> 'https://blazethemes.com/theme/online-newspaper-pro/',
+        'blog_slug' => '',
+        'plugins' => array(
+            'elementor' => array(
+                'name' => 'Elementor',
+                'source' => 'wordpress',
+                'file_path' => 'elementor/elementor.php'
+            ),
+            'news-kit-elementor-addons' => array(
+                'name' => 'News Kit Elementor Addons',
+                'source' => 'wordpress',
+                'file_path' => 'news-kit-elementor-addons/news-kit-elementor-addons.php'
+            ),
+            'contact-form-7' => array(
+                'name' => 'Contact Form 7',
+                'source' => 'wordpress',
+                'file_path' => 'contact-form-7/contact-form-7.php'
+            )
+        ),
+        'pagebuilder' => array(
+            'elementor' => 'Elementor'
+        ),
+        'tags' => array(
+            'pro' => 'Pro',
+            'new' => 'New',
+            'elementor' => 'Elementor'
+        )
+    ],
+    "pro-seven" =>  [
+        "name"  =>  "Seven",
+        "type"  =>  "pro",
+        "preview_url"   =>  "https://prev.blazethemes.com/news-elementor-seven/",
+        "image" =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-seven/home.jpg",
+        "menu_array"    =>  [
+            "menu-1"    =>  ""
+        ],
+        "home_slug" =>   "nekit-home",
+        "external_url"  =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-seven.zip",
+        'buy_url'=> 'https://blazethemes.com/theme/online-newspaper-pro/',
+        'blog_slug' => '',
+        'plugins' => array(
+            'elementor' => array(
+                'name' => 'Elementor',
+                'source' => 'wordpress',
+                'file_path' => 'elementor/elementor.php'
+            ),
+            'news-kit-elementor-addons' => array(
+                'name' => 'News Kit Elementor Addons',
+                'source' => 'wordpress',
+                'file_path' => 'news-kit-elementor-addons/news-kit-elementor-addons.php'
+            ),
+            'contact-form-7' => array(
+                'name' => 'Contact Form 7',
+                'source' => 'wordpress',
+                'file_path' => 'contact-form-7/contact-form-7.php'
+            )
+        ),
+        'pagebuilder' => array(
+            'elementor' => 'Elementor'
+        ),
+        'tags' => array(
+            'pro' => 'Pro',
+            'new' => 'New',
+            'elementor' => 'Elementor'
+        )
+    ],
+    "pro-six"   =>  [
+        "name"  =>  "Six",
+        "type"  =>  "pro",
+        "preview_url"   =>  "https://prev.blazethemes.com/news-elementor-six/",
+        "image" =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-six/home.jpg",
+        "menu_array"    =>  [
+            "menu-1"    =>  ""
+        ],
+        "home_slug" =>   "nekit-home",
+        "external_url"  =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-six.zip",
+        'buy_url'=> 'https://blazethemes.com/theme/online-newspaper-pro/',
+        'blog_slug' => '',
+        'plugins' => array(
+            'elementor' => array(
+                'name' => 'Elementor',
+                'source' => 'wordpress',
+                'file_path' => 'elementor/elementor.php'
+            ),
+            'news-kit-elementor-addons' => array(
+                'name' => 'News Kit Elementor Addons',
+                'source' => 'wordpress',
+                'file_path' => 'news-kit-elementor-addons/news-kit-elementor-addons.php'
+            ),
+            'contact-form-7' => array(
+                'name' => 'Contact Form 7',
+                'source' => 'wordpress',
+                'file_path' => 'contact-form-7/contact-form-7.php'
+            )
+        ),
+        'pagebuilder' => array(
+            'elementor' => 'Elementor'
+        ),
+        'tags' => array(
+            'pro' => 'Pro',
+            'new' => 'New',
+            'elementor' => 'Elementor'
+        )
+    ],
+    "pro-eleven"    =>  [
+        "name"  =>  "Eleven",
+        "type"  =>  "pro",
+        "preview_url"   =>  "https://prev.blazethemes.com/news-elementor-eleven/",
+        "image" =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-eleven/home.jpg",
+        "menu_array"    =>  [
+            "menu-1"    =>  ""
+        ],
+        "home_slug" =>   "nekit-home",
+        "external_url"  =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-eleven.zip",
+        'buy_url'=> 'https://blazethemes.com/theme/online-newspaper-pro/',
+        'blog_slug' => '',
+        'plugins' => array(
+            'elementor' => array(
+                'name' => 'Elementor',
+                'source' => 'wordpress',
+                'file_path' => 'elementor/elementor.php'
+            ),
+            'news-kit-elementor-addons' => array(
+                'name' => 'News Kit Elementor Addons',
+                'source' => 'wordpress',
+                'file_path' => 'news-kit-elementor-addons/news-kit-elementor-addons.php'
+            ),
+            'contact-form-7' => array(
+                'name' => 'Contact Form 7',
+                'source' => 'wordpress',
+                'file_path' => 'contact-form-7/contact-form-7.php'
+            )
+        ),
+        'pagebuilder' => array(
+            'elementor' => 'Elementor'
+        ),
+        'tags' => array(
+            'pro' => 'Pro',
+            'new' => 'New',
+            'elementor' => 'Elementor'
+        )
+    ],
+    "pro-twelve"    =>  [
+        "name"  =>  "Twelve",
+        "type"  =>  "pro",
+        "preview_url"   =>  "https://prev.blazethemes.com/news-elementor-twelve/",
+        "image" =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-twelve/home.jpg",
+        "menu_array"    =>  [
+            "menu-1"    =>  ""
+        ],
+        "home_slug" =>   "nekit-twelve-home",
+        "external_url"  =>  "https://prev.blazethemes.com/demo-data/news-kit-elementor-addons/sites/pro-twelve.zip",
+        'buy_url'=> 'https://blazethemes.com/theme/online-newspaper-pro/',
+        'blog_slug' => '',
+        'plugins' => array(
+            'elementor' => array(
+                'name' => 'Elementor',
+                'source' => 'wordpress',
+                'file_path' => 'elementor/elementor.php'
+            ),
+            'news-kit-elementor-addons' => array(
+                'name' => 'News Kit Elementor Addons',
+                'source' => 'wordpress',
+                'file_path' => 'news-kit-elementor-addons/news-kit-elementor-addons.php'
+            ),
+            'contact-form-7' => array(
+                'name' => 'Contact Form 7',
+                'source' => 'wordpress',
+                'file_path' => 'contact-form-7/contact-form-7.php'
+            )
+        ),
+        'pagebuilder' => array(
+            'elementor' => 'Elementor'
+        ),
+        'tags' => array(
+            'pro' => 'Pro',
+            'new' => 'New',
+            'elementor' => 'Elementor'
+        )
+    ],
 ];
 return apply_filters( 'online_newspaper__demos_array_filter', $demos_array );

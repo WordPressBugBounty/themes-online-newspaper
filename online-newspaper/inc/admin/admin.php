@@ -295,7 +295,9 @@ if( ! class_exists( 'Admin_Page' ) ) :
                                                 <div class="external-links">
                                                     <a class="view-on-org external-link" href="<?php echo esc_url( '//wordpress.org/plugins/' . $plugin['slug'] ); ?>" target="_blank"><?php echo esc_html__( 'View on Wordpress.org', 'online-newspaper' ); ?></a>
                                                     <?php
-                                                        if( array_key_exists( 'dependency', $plugin ) ) echo '<span class="depedency-message">'. esc_html( 'This plugin is an addons of ' . $plugin_information[ $plugin['dependency'] ]['name'] ) .'</span>';
+                                                        if( array_key_exists( 'dependency', $plugin ) && array_key_exists( $plugin[ 'dependency' ], $plugin_information ) ) :
+                                                            echo '<span class="depedency-message">'. esc_html( 'This plugin is an addons of ' . $plugin_information[ $plugin['dependency'] ]['name'] ) .'</span>';
+                                                        endif;
                                                         if( $plugin['homepage'] ) echo '<a class="official-site external-link" href="'. esc_url( $plugin['homepage'] ) .'" target="_blank">'. esc_html__( 'Official site', 'online-newspaper' ) .'</a>';
                                                     ?>
                                                 </div>

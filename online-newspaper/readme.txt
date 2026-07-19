@@ -74,6 +74,9 @@ License: The MIT License
 
 == Changelog ==
 
+= 1.0.10 - July 19th, 2026 =
+    * Fixed - Fixed demo import issue of elementor demos
+
 = 1.0.9 - July 17th, 2026 =
     * Fixed - New Elementor Demos Added
 
